@@ -43,8 +43,8 @@ jobs:
 
       - name: Sync to Gitee
         uses: wearerequired/git-mirror-action@v1.2.0
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
+        #env:
+        #  SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
         with:
           # GitHub 仓库地址
           source-repo:  git@github.com:likehao19/cloud-notes.git
