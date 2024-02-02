@@ -8,22 +8,49 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: '主页', link: '/' },
+      { text: '指南', link: '/markdown-examples' },
+      {
+        text: '关于我',
+        items: [
+          { text: 'Github',
+            link: 'https://github.com/Jacqueline712' },
+          {
+            text: 'Gitee',
+            link: 'https://juejin.cn/user/3131845139247960/posts'
+          },
+          {
+            text: 'CSDN',
+            link: 'https://pzfqk98jn1.feishu.cn/wiki/space/7193915595975491587?ccm_open_type=lark_wiki_spaceLink'
+          }
+        ]
+      }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: '指南',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Markdown 指南', link: '/markdown-examples' },
+          { text: 'Runtime API 指南', link: '/api-examples' }
+        ]
+      },
+      {
+        text: 'Vite',
+        items: [
+          { text: '项目初始化', link: '/vite/vite-01.md' },
+        ]
+      },
+      {
+        text: 'Spring Boot',
+        items: [
+          { text: '项目初始化', link: '/markdown-examples' },
         ]
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/likehao19/cloud-notes' }
     ]
   }
 })
